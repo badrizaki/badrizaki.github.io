@@ -190,5 +190,73 @@
 
    </div>
 
+   <script src="https://kit.fontawesome.com/d45e7e578e.js" crossorigin="anonymous"></script>
+
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+   <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+   <script src="assets/front/js/parallax.custom.js"></script>
+   <script src="assets/front/js/SmoothScroll.js"></script>
+   <script src="assets/front/js/shootingStars.js"></script>
+
+   <script type="text/javascript">
+      let title = document.getElementById('title');
+      let starsImage = document.getElementById('starsImage');
+      let moon = document.getElementById('moon');
+
+      let mountain1 = document.getElementById('mountain1');
+      let mountain2 = document.getElementById('mountain2');
+      let mountain3 = document.getElementById('mountain3');
+      let mountain4 = document.getElementById('mountain4');
+      let mountain5 = document.getElementById('mountain5');
+
+      // let cloudcenter = document.getElementById('cloudcenter');
+      // let cloudleft = document.getElementById('cloudleft');
+      // let cloudright = document.getElementById('cloudright');
+
+      window.addEventListener('scroll', function() {
+         let value = window.scrollY;
+         starsImage.style.top = value * 0.30 + 'px';
+         title.style.top = value * 0.20 + 'px';
+         moon.style.top = value * 0.50 + 'px';
+         
+         mountain1.style.bottom = value * 0.10 - 100 + 'px';
+         mountain2.style.left = -value * 0.10 + 'px';
+         mountain3.style.left = -value * 0.15 + 'px';
+         mountain4.style.bottom = value * 0.10 + 'px';
+
+         // cloudcenter.style.bottom = (-value * 0.20) - 550 + 'px';
+         // cloudleft.style.left = -value * 0.10 + 'px';
+         // cloudright.style.right = -value * 0.10 + 'px';
+      });
+      $('.parallax-item').each(function () {
+         $(this).parallax();
+      });
+
+      TweenLite.defaultEase = Linear.easeNone;
+      var controller = new ScrollMagic.Controller();
+      var tl = new TimelineMax();
+      tl.from("section.panel.section3", 1, {xPercent: 100});    
+      tl.from("section.panel.section4", 1, {xPercent: -100});
+      tl.from("section.panel.section5", 1, {yPercent: 100});
+
+
+      new ScrollMagic.Scene({
+         triggerElement: "#pinMaster",
+         triggerHook: "onLeave",
+         duration: "200%"
+      })
+      .setPin("#pinMaster")
+      .setTween(tl)
+      /*.addIndicators({
+         colorTrigger: "white",
+         colorStart: "white",
+         colorEnd: "white",
+         indent: 40
+      })*/
+      .addTo(controller);
+   </script>
 </body>
 </html>
