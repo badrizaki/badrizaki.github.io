@@ -13,109 +13,49 @@
 
    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
    <link href="https://fonts.googleapis.com/css2?family=Monoton:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+   <link rel="stylesheet" href="assets/front/css/saxxtext.min.css" />
    <link rel="stylesheet" type="text/css" href="assets/front/css/main.css">
    <link rel="stylesheet" type="text/css" href="assets/front/css/star.css">
    <link rel="stylesheet" type="text/css" href="assets/front/css/section1.css">
    <link rel="stylesheet" type="text/css" href="assets/front/css/section2.css">
+   <link rel="stylesheet" type="text/css" href="assets/front/css/section3.css">
+   <link rel="stylesheet" type="text/css" href="assets/front/css/section4.css">
    <style type="text/css">
+      .vertical-center{
+         position: absolute;
+         top:50%;
+         left: 0%;
+         transform:translate(0%, -50%);
+         -webkit-transform:translate(0%, -50%);
+      }
+      .horizontal-center { left: 0; right: 0; text-align: center; }
+      .text-align-center { text-align: center; }
 
-   .vertical-center{
-      position: absolute;
-      top:50%;
-      left: 0%;
-      transform:translate(0%, -50%);
-      -webkit-transform:translate(0%, -50%);
-   }
-   .horizontal-center { left: 0; right: 0; text-align: center; }
-   .text-align-center { text-align: center; }
+      #footer {
+         height: 100px;
+         background-color: black;
+      }
 
-   .section2 { background-image: url('assets/front/img/building.png'); background-position: bottom center; background-size: 50% auto; background-repeat: no-repeat; }
-   .section2 h1 { font-family: 'Monoton', sans-serif; }
+      .blue {
+         background-color: #495a6f;
+      }
+      .section5 {
+         background-color: #a66f28;
+      }
 
-   #placeholder1 {
-      height: 100vh;
-      background-color: grey;
-   }
+      .black {
+         background-color: #000000;
+      }
+      .green {
+         background-color: #22d659;
+      }
 
-   #pinContainer {
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
-   }
-   .panel {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-   }
-
-   #pinMaster {
-      position: relative;
-   }
-
-   #footer {
-      height: 100px;
-      background-color: black;
-   }
-
-   .spacer {
-      height: 1px;
-   }
-
-   .blue {
-      background-color: #495a6f;
-   }
-   .section4 {
-      background-color: #38ced7;
-   }
-   .section5 {
-      background-color: #a66f28;
-   }
-   .section3 {
-      background-color: #953543;
-   }
-
-   .black {
-      background-color: #000000;
-   }
-   .green {
-      background-color: #22d659;
-   }
-
-   .image {
-      width: 200px;
-      height: 200px;
-      line-height: 200px;
-      font-size: 60px;
-      position: absolute;
-      right: 50px;
-      bottom: 100px;
-      color: white;
-      text-align: center;
-   }
-
-   .imageRed {
-      background: red;
-   }
-
-   .imageGreen {
-      background: green;
-   }
-
-   .imageBlue {
-      background: navy;
-   }
-
-   .stars-container {
-     z-index: 0;
-     position: absolute;
-     background-repeat: repeat-x, repeat-x repeat-y;
-     transform:translate3D(0em, 0em, 0);
-     animation: stars 21s ease; 
-     transform-style: preserve-3d;
-  }
-  #ShootingStarParams { z-index: 0; position: absolute; }
-</style>
+   </style>
 </head>
 
 <body id="body">
@@ -123,10 +63,10 @@
    <div class="container-main-content">
 
       <div id="section-1">
-         <div id="layout" class="stars-container">
+         <!-- <div id="layout" class="stars-container">
             <h1>SHOOTING STARS...</h1>
             <div id="ShootingStarParams"></div>
-         </div>
+         </div> -->
          <div id='stars'></div>
          <div id='stars2'></div>
          <div id='stars3'></div>
@@ -141,13 +81,19 @@
             <img id="starsImage" class="layer" data-depth="0.7" src="assets/front/img/stars.png">
          </div>
          <div id='title' class="parallax-item">
-            <div class="layer" data-depth="0.20">
+            <!-- <div class="layer" data-depth="0.20">
                WELCOME TO
             </div>
             <div class="layer" data-depth="0.27">
                <div class="units">
                   <h1 class="text-reflect">BADRI ZAKI</h1>
                   <h1 class="text-reflect">BADRI ZAKI</h1>
+               </div>
+            </div> -->
+            <div class="layer" data-depth="0.27">
+               <div class="units">
+                  <h1 class="text-reflect">WELCOME</h1>
+                  <h1 class="text-reflect">WELCOME</h1>
                </div>
             </div>
             <!-- <div class="layer" data-depth="0.30">
@@ -168,23 +114,61 @@
 
       <div id="spacer-section2" style="height: 1px; background-color: #495a6f;">
       </div>
+
       <div id="pinMaster">
          <div id="pinContainer">
+
             <section class="section2 panel blue">
-               <h1 class="vertical-center horizontal-center" style="color: white;">Hi, I’m Badri Zaki. Nice to meet you.</h1>
+               <h1 class="vertical-center horizontal-center">
+                  <div class="flex-container">
+                     <saxx>H</saxx><saxx>i</saxx><saxx>,</saxx>&nbsp;
+                     <saxx>I</saxx><saxx>’</saxx><saxx>m</saxx>&nbsp;
+                     <saxx>B</saxx><saxx>a</saxx><saxx>d</saxx><saxx>r</saxx><saxx>i</saxx>&nbsp;
+                     <saxx>Z</saxx><saxx>a</saxx><saxx>k</saxx><saxx>i</saxx><saxx>.</saxx>
+                  </div>
+                  <div class="flex-container">
+                     <saxx>N</saxx><saxx>i</saxx><saxx>c</saxx><saxx>e</saxx>&nbsp;
+                     <saxx>t</saxx><saxx>o</saxx>&nbsp;
+                     <saxx>m</saxx><saxx>e</saxx><saxx>e</saxx><saxx>t</saxx>&nbsp;
+                     <saxx>y</saxx><saxx>o</saxx><saxx>u</saxx><saxx>.</saxx>
+                  </div>
+               </h1>
             </section>
+
             <section class="panel section3">
-               <b>Pin Panel B</b>
+               <div class="cursor">
+                  <div class="cursor__circle">
+                     <svg height="64" width="64"><circle cx="32" cy="32" r="16"></circle></svg>
+                  </div>
+               </div>
+               <div class="container-content-section3">
+                  
+                  <div class="vertical-center horizontal-center text-hover-negative">
+                     <a href="javascript:;">
+                        I’m a Developer located in Indonesia. 
+                        <br>
+                        I have a serious passion for developing applications and learning new technologies in the field of programming.
+                        <br>
+                        Well-organized person, problem solver, independent employee with high attention to detail,
+                        <br>
+                        <!-- Interested in the entire frontend spectrum and working on ambitious projects with positive people. -->
+                     </a>
+                  </div>
+               </div>
             </section>
+
             <section class="panel section4">
-               <b>Pin Panel C</b>
+               <div class="container">
+                  <hgroup class="home-title">
+                     <h1>CORY HUGHART</h1>
+                     <h2>The Odyssey of a Full-Stack Web Developer</h2>
+                 </hgroup>
+               </div>
             </section>
             <section class="panel section5">
-               <b>Pin Panel D</b>
+               <!-- <b>Pin Panel D</b> -->
             </section>
          </div>
-         <div class="spacer green"><b>Content</b></div>
-         <div class="spacer brown"><b>Content</b></div>
          <div id="footer" style=" "><b>Content</b></div>
       </div>
 
@@ -200,17 +184,49 @@
    <script src="assets/front/js/parallax.custom.js"></script>
    <script src="assets/front/js/SmoothScroll.js"></script>
    <script src="assets/front/js/shootingStars.js"></script>
+   <script src="assets/front/js/saxxtext.js"></script>
 
    <script type="text/javascript">
+      setSaxxMouseEffect( 'saxx' , 'saxx heartBeat' , 'black' , 'red' ) ;
+      
+      const $cursor = document.querySelector(".cursor__circle");
+      const $hover = document.querySelectorAll(".text-hover-negative");
+
+      document.querySelector(".text-hover-negative").addEventListener("mousemove", onMouseMove);
+      for (let i = 0; i < $hover.length; i++) {
+         $hover[i].addEventListener("mouseenter", onMouseHover);
+         $hover[i].addEventListener("mouseleave", onMouseHoverOut);
+      }
+      function onMouseMove(e) {
+         TweenMax.to($cursor, 0, {
+            x: e.pageX - $(document).scrollLeft() - 30,
+            y: e.pageY - $(document).scrollTop() - 30,
+         });
+      }
+      function onMouseHover() {
+         $(".cursor").show();
+         $(".cursor__circle").show();
+         $(".text-hover-negative").addClass("hide-cursor");
+         TweenMax.to($cursor, 0.4, {
+            scale: 2,
+         });
+      }
+      function onMouseHoverOut() {
+         $(".text-hover-negative").removeClass("hide-cursor");
+         TweenMax.to($cursor, 0.4, {
+            scale: 0,
+         });
+      }
+
       let title = document.getElementById('title');
       let starsImage = document.getElementById('starsImage');
       let moon = document.getElementById('moon');
 
-      let mountain1 = document.getElementById('mountain1');
-      let mountain2 = document.getElementById('mountain2');
-      let mountain3 = document.getElementById('mountain3');
-      let mountain4 = document.getElementById('mountain4');
-      let mountain5 = document.getElementById('mountain5');
+      // let mountain1 = document.getElementById('mountain1');
+      // let mountain2 = document.getElementById('mountain2');
+      // let mountain3 = document.getElementById('mountain3');
+      // let mountain4 = document.getElementById('mountain4');
+      // let mountain5 = document.getElementById('mountain5');
 
       // let cloudcenter = document.getElementById('cloudcenter');
       // let cloudleft = document.getElementById('cloudleft');
@@ -222,10 +238,13 @@
          title.style.top = value * 0.20 + 'px';
          moon.style.top = value * 0.50 + 'px';
          
-         mountain1.style.bottom = value * 0.10 - 100 + 'px';
-         mountain2.style.left = -value * 0.10 + 'px';
-         mountain3.style.left = -value * 0.15 + 'px';
-         mountain4.style.bottom = value * 0.10 + 'px';
+         if (value >= 606 && value <= 700) {
+            setAnimationSaxx ( 'saxx' , 'saxx heartBeat' ) ;
+         }
+         // mountain1.style.bottom = value * 0.10 - 100 + 'px';
+         // mountain2.style.left = -value * 0.10 + 'px';
+         // mountain3.style.left = -value * 0.15 + 'px';
+         // mountain4.style.bottom = value * 0.10 + 'px';
 
          // cloudcenter.style.bottom = (-value * 0.20) - 550 + 'px';
          // cloudleft.style.left = -value * 0.10 + 'px';
@@ -238,10 +257,9 @@
       TweenLite.defaultEase = Linear.easeNone;
       var controller = new ScrollMagic.Controller();
       var tl = new TimelineMax();
-      tl.from("section.panel.section3", 1, {xPercent: 100});    
-      tl.from("section.panel.section4", 1, {xPercent: -100});
-      tl.from("section.panel.section5", 1, {yPercent: 100});
-
+      tl.from("section.panel.section3", 1, {xPercent: 150});    
+      tl.from("section.panel.section4", 1, {xPercent: -150});
+      tl.from("section.panel.section5", 1, {yPercent: 150});
 
       new ScrollMagic.Scene({
          triggerElement: "#pinMaster",

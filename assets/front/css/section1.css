@@ -1,5 +1,5 @@
 #section-1 {
-	height: calc(100vh + 150px);
+	height: calc(100vh + 120px);
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 	overflow: hidden;
 }
@@ -95,3 +95,13 @@ h1 { margin: 0; padding: 0; }
    width: 80%;
    right: 0;
 }
+
+.stars-container {
+	z-index: 0;
+	position: absolute;
+	background-repeat: repeat-x, repeat-x repeat-y;
+	transform:translate3D(0em, 0em, 0);
+	animation: stars 21s ease; 
+	transform-style: preserve-3d;
+ }
+ #ShootingStarParams { z-index: 0; position: absolute; }

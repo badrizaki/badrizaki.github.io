@@ -1,0 +1,55 @@
+.section3 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.cursor {
+    display: none;
+}
+
+.container-content-section3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hover-negative a {
+    font-family: "lato", sans-serif;
+    transition: all 0.5s ease;
+    color: #efefef;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 70px;
+    cursor: none;
+}
+
+.text-hover-negative a:hover {
+    transform: scale(1.6);
+}
+
+.cursor {
+    pointer-events: none;
+}
+
+.cursor__circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+    display: none;
+}
+
+circle {
+    fill: white;
+}
+
+.hide-cursor {
+    cursor: none;
+}
+
+.show-cursor {
+    cursor: pointer;
+}
