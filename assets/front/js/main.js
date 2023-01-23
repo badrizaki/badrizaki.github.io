@@ -130,30 +130,73 @@ var tagCloud = TagCloud(".content-sphere", myTags, {
 });
 setSaxxMouseEffect("saxx2", "saxx heartBeat", "#2596be", "green");
 
-setSaxxMouseEffect("saxx3", "saxx heartBeat", "white", "green");
-
 // SECTION 5
-// var images = [
-//   "https://scrollmagic.io/assets/img/example_imagesequence_01.png",
-//   "https://scrollmagic.io/assets/img/example_imagesequence_02.png",
-//   "https://scrollmagic.io/assets/img/example_imagesequence_03.png",
-//   "https://scrollmagic.io/assets/img/example_imagesequence_04.png",
-//   "https://scrollmagic.io/assets/img/example_imagesequence_05.png",
-//   "https://scrollmagic.io/assets/img/example_imagesequence_06.png",
-//   "https://scrollmagic.io/assets/img/example_imagesequence_07.png",
-// ];
-// var obj = { curImg: 0 };
-// var tween = TweenMax.to(obj, 0.7, {
-//   curImg: images.length - 1,
-//   roundProps: "curImg",
-//   repeat: 3,
-//   immediateRender: true,
-//   ease: Linear.easeNone,
-//   onUpdate: function () {
-//     $("#myimg").attr("src", images[obj.curImg]);
-//   },
-// });
-// var controller = new ScrollMagic.Controller();
-// var scene = new ScrollMagic.Scene({ triggerElement: "#trigger", duration: 720 })
-//   .setTween(tween)
-//   .addTo(controller);
+setSaxxMouseEffect("saxx3", "saxx heartBeat", "#2596be", "green");
+$(function () {
+  // wait for document ready
+  var flightpath = {
+    entry: {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        { x: -100, y: -20 },
+        { x: 300, y: 10 },
+      ],
+    },
+    looping: {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        { x: 510, y: 60 },
+        { x: 620, y: -60 },
+        { x: 500, y: -100 },
+        { x: 380, y: 20 },
+        { x: 500, y: 60 },
+        { x: 580, y: 20 },
+        { x: 620, y: 15 },
+      ],
+    },
+    leave: {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        { x: 660, y: 20 },
+        { x: 800, y: 130 },
+        { x: $(window).width() + 300, y: -100 },
+      ],
+    },
+  };
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // create tween
+  var tween = new TimelineMax()
+    .add(
+      TweenMax.to($("#plane"), 1.2, {
+        css: { bezier: flightpath.entry },
+        ease: Power1.easeInOut,
+      })
+    )
+    .add(
+      TweenMax.to($("#plane"), 2, {
+        css: { bezier: flightpath.looping },
+        ease: Power1.easeInOut,
+      })
+    )
+    .add(
+      TweenMax.to($("#plane"), 1, {
+        css: { bezier: flightpath.leave },
+        ease: Power1.easeInOut,
+      })
+    );
+
+  // build scene
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#trigger",
+    duration: 500,
+    offset: 100,
+  })
+    .setPin("#target")
+    .setTween(tween)
+    .addTo(controller);
+});

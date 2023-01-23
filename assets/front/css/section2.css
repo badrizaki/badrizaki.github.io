@@ -29,7 +29,7 @@
 	/*background: linear-gradient(0deg, rgba(56,131,216,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 48%, rgba(255,255,255,0) 100%);*/
 }
 
-.section2 { background-image: url('../img/building.png'); background-position: bottom center; background-size: 50% auto; background-repeat: no-repeat; }
+.section2 { background-color: #495a6f; background-image: url('../img/building.png'); background-position: bottom center; background-size: 50% auto; background-repeat: no-repeat; }
 .section2 h1 { font-family: "Josefin Sans",sans-serif; color: white; font-size: 60px; }
 .section2 h1 span { font-weight: bold; font-size: 70px; }
 
