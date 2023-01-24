@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'sauvage-antique';
+    src: url("../../fonts/sauvage-antique.woff2");
+}
+
+.parallaxParent {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallaxParent>* {
+    /* height: 200%; */
+    position: relative;
+    top: -100%;
+}
+
+.container-contact {
+    /* z-index: -3; */
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 95.3%, 0.94), hsla(0, 0%, 95.3%, 0.94)), url("../img/noise.webp");
+    background-position: 0px 0px, 0px 0px;
+    background-size: auto, 128px;
+    color: #000000;
+    height: 100vh;
+}
+
+.container-contact h1 {
+    font-family: 'sauvage-antique';
+}
+
+#circle-blue {
+    position: absolute !important;
+    width: 457px;
+    margin-top: -8%;
+    right: 17%;
+}
+
+.container-contact ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container-contact ul,
+.container-contact ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    list-style-position: inside;
+}
+
+.container-contact ul li a {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #000000;
+    display: block;
+    text-decoration: none;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.container-contact ul li a:hover {
+    padding-left: 15px;
+    border-bottom: solid 1px rgb(37, 150, 190);
+    color: rgb(37, 150, 190);
+}

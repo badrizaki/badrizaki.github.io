@@ -32,6 +32,7 @@
 .section2 { background-color: #495a6f; background-image: url('../img/building.png'); background-position: bottom center; background-size: 50% auto; background-repeat: no-repeat; }
 .section2 h1 { font-family: "Josefin Sans",sans-serif; color: white; font-size: 60px; }
 .section2 h1 span { font-weight: bold; font-size: 70px; }
+.scrollmagic-pin-spacer { min-height: auto !important;}
 
 #pinContainer {
    width: 100%;

@@ -27,39 +27,17 @@
    <link rel="stylesheet" type="text/css" href="assets/front/css/section3.css">
    <link rel="stylesheet" type="text/css" href="assets/front/css/section4.css">
    <link rel="stylesheet" type="text/css" href="assets/front/css/section5.css">
+   <link rel="stylesheet" type="text/css" href="assets/front/css/contact.css">
    <style type="text/css">
-      .vertical-center{
-         position: absolute;
-         top:50%;
-         left: 0%;
-         transform:translate(0%, -50%);
-         -webkit-transform:translate(0%, -50%);
-      }
-      .horizontal-center { left: 0; right: 0; text-align: center; }
-      .text-align-center { text-align: center; }
-
       #footer {
          background-color: black;
          padding: 30px;
       }
-
-      .blue {
-         
-      }
-
-      .black {
-         background-color: #000000;
-      }
-      .green {
-         background-color: #22d659;
-      }
-      
    </style>
    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
 
 <body id="body">
-   <div id="overlay" onclick="hideMenu()"></div>
    <div class="container-main-content">
 
       <div id="section-1">
@@ -145,22 +123,27 @@
                </div>
             </section>
          </div>
-         <div style="position: absolute; width: 100%;">
-            <div class="spacer s2"></div>
+         <div style="position: absolute;">
             <div class="spacer s0" id="trigger"></div>
             <div id="target">
                <img id="plane" src="assets/front/img/paperplan.png">
             </div>
-            <div class="spacer s2"></div>
          </div>
-         <section class="section5">
+         <section class="section5 spacer s1">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-12">
-                     <h1 class="flex-container">
-                        <saxx3>M</saxx3><saxx3>y</saxx3>&nbsp;
-                        <saxx3>P</saxx3><saxx3>o</saxx3><saxx3>r</saxx3><saxx3>t</saxx3><saxx3>f</saxx3><saxx3>o</saxx3><saxx3>l</saxx3><saxx3>i</saxx3><saxx3>o</saxx3>
-                     </h1>
+                  <div class="col-lg-3">
+                     <div id="trigger1" class="spacer s0"></div>
+                     <div id="pin1" class="box2 blue">
+                        <h1 class="flex-container" style="justify-content: start;">
+                           <saxx3>M</saxx3><saxx3>y</saxx3>&nbsp;
+                        </h1>
+                        <h1 class="flex-container" style="justify-content: start;">
+                           <saxx3>P</saxx3><saxx3>o</saxx3><saxx3>r</saxx3><saxx3>t</saxx3><saxx3>f</saxx3><saxx3>o</saxx3><saxx3>l</saxx3><saxx3>i</saxx3><saxx3>o</saxx3>
+                        </h1>
+                     </div>
+                  </div>
+                  <div class="col-lg-9" id="container-portfolio">
                      
                      <main>
                         <div class="grid-wrap">
@@ -294,10 +277,36 @@
                </div>
             </div>
          </section>
-         <div id="footer" style="color: aliceblue; text-align: center;">
-            Copyright © 2023 Badri Zaki. All Rights Reserved.
+
+         <div class="spacer s0"></div>
+         <div id="parallax2" class="parallaxParent">
+            <div class="container-contact">
+               <div class="container d-flex h-100">
+                  <div class="row justify-content-center align-self-center" style="width: 100%;">
+                     <div class="col-md-6">
+                        <div class="parallax-item">
+                           <img id="circle-blue" class="layer" data-depth="0.30" src="assets/front/img/circle-blu.png">
+                           <h1 style="color: #050038;" class="layer" data-depth="0.15">Contact Me</h1>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <p>I am interested in freelance opportunities.<br>However, if you have other requests or questions, please contact via email.</p>
+                        <ul>
+                           <li><a href="mailto:badrizaki@gmail.com" target="_blank">Send me mail</a></li>
+                           <li><a href="https://www.linkedin.com/in/badrizaki" target="_blank">Linkedin</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
+
+         <div id="footer" style="color: aliceblue; text-align: center;">
+            Copyright © 2023 Badri Zaki.
+         </div>
+
       </div>
+      
    </div>
 
    <section id="content-portfolio">
@@ -487,7 +496,6 @@
    <script src="https://kit.fontawesome.com/d45e7e578e.js" crossorigin="anonymous"></script>
 
    <script src="assets/js/jquery.min.js"></script>
-   <!-- <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script> -->
    <script src="assets/front/js/TweenMax.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -504,8 +512,5 @@
    <script src="assets/front/js/masonry.pkgd.min.js"></script>
    <script src="assets/front/js/charming.min.js"></script>
    <script src="assets/front/js/portfolio.js"></script>
-
-   <script type="text/javascript">
-   </script>
 </body>
 </html>

@@ -1,10 +1,15 @@
 .section5 {
-    background-color: #1d1d1d;
-    padding: 100px;
+	background-color: #1d1d1d;
+	padding: 100px;
+	/* border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px; */
+	-webkit-box-shadow: 0px 16px 12px -7px rgba(29, 29, 29, 1);
+	-moz-box-shadow: 0px 16px 12px -7px rgba(29, 29, 29, 1);
+	box-shadow: 0px 16px 12px -7px rgba(29, 29, 29, 1);
 }
 
 .section5 h1 {
-    color: #2596be;
+	color: #2596be;
 }
 
 /* Page Loader */
@@ -38,7 +43,7 @@
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
+		transform: scale3d(0.5, 0.5, 1);
 	}
 }
 
@@ -193,11 +198,11 @@ main {
 }
 
 .grid__item:nth-child(even) .grid__item-img {
-	transform: rotate3d(0,0,1,4deg);
+	transform: rotate3d(0, 0, 1, 4deg);
 }
 
 .grid__item:nth-child(odd) .grid__item-img {
-	transform: rotate3d(0,0,1,-4deg);
+	transform: rotate3d(0, 0, 1, -4deg);
 }
 
 .grid__item-title {
@@ -210,7 +215,7 @@ main {
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
 	transform-origin: 0 50%;
-    color: #2596be;
+	color: #2596be;
 }
 
 .grid__item-number {
@@ -220,10 +225,10 @@ main {
 	bottom: 0;
 	font-size: 2.65rem;
 	margin: 0 0 0.15rem;
-    color: #ffffff;
+	color: #ffffff;
 }
 
-.grid__item-number > span {
+.grid__item-number>span {
 	display: inline-block;
 }
 
@@ -260,7 +265,7 @@ main {
 	opacity: 1;
 	padding: 3rem 5vw 10rem;
 	pointer-events: auto;
-    color: #ffffff;
+	color: #ffffff;
 }
 
 .content__item-intro {
@@ -295,7 +300,7 @@ main {
 	grid-area: 1 / 1 / 1 / 1;
 }
 
-.content__item-title > span {
+.content__item-title>span {
 	white-space: pre;
 	display: inline-block;
 }
@@ -305,7 +310,7 @@ main {
 	font-size: 1.25rem;
 	font-weight: normal;
 	margin: 3rem auto;
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .content__item-url {
@@ -336,15 +341,15 @@ main {
 	padding: 0;
 	cursor: pointer;
 	color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .content__close:focus {
 	outline: none;
 }
 
-.content__item--current ~ .content__close {
+.content__item--current~.content__close {
 	pointer-events: auto;
 }
 
@@ -355,7 +360,7 @@ main {
 	display: none;
 }
 
-.js .content__item-title > span,
+.js .content__item-title>span,
 .js .content__item-subtitle,
 .js .content__item-text,
 .content__close,
@@ -371,6 +376,7 @@ main {
 		grid-template-columns: 40% 60%;
 		grid-template-areas: 'title header';
 	}
+
 	.codrops-header {
 		grid-area: header;
 		justify-self: end;
@@ -380,19 +386,23 @@ main {
 		align-items: center;
 		text-align: left;
 	}
+
 	.codrops-links {
 		margin: 0 0 0 1.5rem;
 	}
+
 	.title {
 		grid-area: title;
 		display: flex;
 		text-align: left;
 	}
+
 	.title__sub {
 		position: relative;
 		padding: 0 0 0 5rem;
 		margin: 0 0 0 1rem;
 	}
+
 	.title__sub::before {
 		content: '';
 		height: 1px;
@@ -402,29 +412,37 @@ main {
 		top: 0.65rem;
 		left: 0;
 	}
+
 	.title__sub-works {
 		display: block;
 	}
+
 	.grid__item-number {
 		right: -2.45rem;
 	}
+
 	.grid__item-title {
 		margin-left: -0.25rem;
 	}
+
 	.content__item-subtitle {
 		font-size: 3vw;
 	}
+
 	.content__item-text {
-  		/* column-count: 2; */
-  		/* column-gap: 20px; */
-  	}
+		/* column-count: 2; */
+		/* column-gap: 20px; */
+	}
+
 	.content__item-img {
 		max-width: none;
 		height: calc(100vh - 6rem);
 	}
+
 	.content__item-subtitle {
 		max-width: 50%;
 	}
+
 	.content__indicator {
 		display: block;
 	}

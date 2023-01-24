@@ -1,6 +1,7 @@
 .section3 {
     background-color: #000000;
     color: #ffffff;
+    border-radius: 70px;
 }
 .section3:before {
     content: ' ';
@@ -17,6 +18,7 @@
     background-size: cover;
     filter: invert(100%);
     -webkit-filter: invert(100%);
+    border-radius: 70px;
   }
 .cursor {
     display: none;

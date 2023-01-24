@@ -167,7 +167,7 @@ $(function () {
     },
   };
   // init controller
-  var controller = new ScrollMagic.Controller();
+  // var controller = new ScrollMagic.Controller();
 
   // create tween
   var tween = new TimelineMax()
@@ -200,3 +200,23 @@ $(function () {
     .setTween(tween)
     .addTo(controller);
 });
+
+$(function () {
+  var durationStickyPortfolio = 2400;
+  // var controller = new ScrollMagic.Controller();
+  var StickyPortfolio = new ScrollMagic.Scene({
+    triggerElement: "#trigger1",
+    duration: durationStickyPortfolio,
+  })
+    .setPin("#pin1")
+    // .addIndicators({name: "1 (duration: "+duration+")"}) // add indicators (requires plugin)
+    .addTo(controller);
+});
+
+var controllerContact = new ScrollMagic.Controller({
+  globalSceneOptions: { triggerHook: "onEnter", duration: "100%" },
+});
+new ScrollMagic.Scene({ triggerElement: "#parallax2" })
+  .setTween("#parallax2 > div", { y: "100%", ease: Linear.easeNone })
+  .addIndicators()
+  .addTo(controllerContact);
