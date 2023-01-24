@@ -218,5 +218,5 @@ var controllerContact = new ScrollMagic.Controller({
 });
 new ScrollMagic.Scene({ triggerElement: "#parallax2" })
   .setTween("#parallax2 > div", { y: "100%", ease: Linear.easeNone })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controllerContact);
