@@ -202,15 +202,17 @@ $(function () {
 });
 
 $(function () {
-  var durationStickyPortfolio = 2400;
-  // var controller = new ScrollMagic.Controller();
-  var StickyPortfolio = new ScrollMagic.Scene({
-    triggerElement: "#trigger1",
-    duration: durationStickyPortfolio,
-  })
-    .setPin("#pin1")
-    // .addIndicators({name: "1 (duration: "+duration+")"}) // add indicators (requires plugin)
-    .addTo(controller);
+  if ($(window).width() >= 600) {
+    var durationStickyPortfolio = 2400;
+    // var controller = new ScrollMagic.Controller();
+    var StickyPortfolio = new ScrollMagic.Scene({
+      triggerElement: "#trigger1",
+      duration: durationStickyPortfolio,
+    })
+      .setPin("#pin1")
+      // .addIndicators({name: "1 (duration: "+duration+")"}) // add indicators (requires plugin)
+      .addTo(controller);
+  }
 });
 
 var controllerContact = new ScrollMagic.Controller({

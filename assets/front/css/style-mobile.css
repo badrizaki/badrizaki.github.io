@@ -1,0 +1,45 @@
+@media only screen and (max-width: 429px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        /* position: relative */
+    }
+
+    #moon {
+        width: 160px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .section2 h1 {
+        font-size: 38px;
+    }
+
+    .text-hover-negative a {
+        line-height: 50px;
+    }
+
+    .tagcloud {
+        width: 390px !important;
+    }
+
+    .section5 {
+        padding: 50px;
+    }
+
+    .grid-wrap {
+        padding: 2rem 1rem 0;
+    }
+
+    #circle-blue {
+        width: 286px;
+        margin-top: -8%;
+        right: 24%;
+    }
+}
