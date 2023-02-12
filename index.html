@@ -1,517 +1,1027 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="utf-8">
-   <title>Badri Zaki</title>
-   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-   <meta content="Badri Zaki" name="keywords">
-   <meta content="Badri Zaki" name="description">
-   <meta name="format-detection" content="telephone=no">
+  <head>
+    <meta charset="utf-8" />
+    <title>Badri Zaki</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Badri Zaki" name="keywords" />
+    <meta content="Badri Zaki" name="description" />
+    <meta name="format-detection" content="telephone=no" />
 
-   <!-- Favicons -->
-   <link href="assets/front/img/favicon.png?v=1.5" rel="icon">
+    <!-- Favicons -->
+    <link href="assets/front/img/favicon.png?v=1.5" rel="icon" />
 
-   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-   <link href="https://fonts.googleapis.com/css2?family=Monoton:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-   
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-   <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css" />
-   <link rel="stylesheet" href="assets/front/css/saxxtext.min.css" />
-   <link rel="stylesheet" type="text/css" href="assets/front/css/main.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/star.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/section1.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/section2.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/section3.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/section4.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/section5.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/contact.css">
-   <link rel="stylesheet" type="text/css" href="assets/front/css/style-mobile.css">
-   <style type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/front/css/saxxtext.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/front/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/front/css/star.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/section1.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/section2.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/section3.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/section4.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/section5.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/contact.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/front/css/style-mobile.css"
+    />
+    <style type="text/css">
       #footer {
-         background-color: black;
-         padding: 30px;
+        background-color: black;
+        padding: 30px;
       }
-   </style>
-   <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-</head>
+    </style>
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() || alert("Your browser not support.");
+    </script>
+  </head>
 
-<body id="body">
-   <div class="container-main-content">
-
+  <body id="body">
+    <div class="container-main-content">
       <div id="section-1">
-         <div id='stars'></div>
-         <div id='stars2'></div>
-         <div id='stars3'></div>
-         <div class="parallax-item">
-            <img id="moon"class="layer" data-depth="0.10" src="assets/front/img/moon.png">
-            <img id="starsImage" class="layer" data-depth="0.7" src="assets/front/img/stars.png">
-         </div>
-         <div id='title' class="parallax-item">
-            <div class="layer" data-depth="0.36">
-               <img src="assets/front/img/profile.png" width="100px" style="border-radius: 50%;"/>
-            </div>
-            <div class="layer" data-depth="0.27">
-               <div class="units">
-                  <h1 class="text-reflect">WELCOME</h1>
-                  <h1 class="text-reflect">WELCOME</h1>
-               </div>
-            </div>
-         </div>
-         
-         <img id="meteoridbottom" src="assets/front/img/meteorid-bottom.png">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="parallax-item">
+          <!-- <img
+            id="moon"
+            class="layer"
+            data-depth="0.10"
+            src="assets/front/img/moon.png"
+          /> -->
+          <div id="moon2"></div>
+          <img
+            id="starsImage"
+            class="layer"
+            data-depth="0.7"
+            src="assets/front/img/stars.png"
+          />
+        </div>
+        <div id="title" class="parallax-item">
+          <div class="layer" data-depth="0.12">
+            <img
+              src="assets/front/img/profile.png"
+              width="100px"
+              style="border-radius: 50%"
+            />
+          </div>
+          <div
+            class="layer"
+            data-depth="0.10"
+            style="text-align: center; margin: 0 auto"
+          >
+            <div id="text3d"></div>
+            <!-- <div class="units">
+              <h1 class="text-reflect">WELCOME</h1>
+              <h1 class="text-reflect">WELCOME</h1>
+            </div> -->
+          </div>
+        </div>
+
+        <img id="meteoridbottom" src="assets/front/img/meteorid-bottom.png" />
       </div>
 
-      <div id="spacer-section2" style="height: 1px; background-color: #495a6f;">
-      </div>
+      <div
+        id="spacer-section2"
+        style="height: 1px; background-color: #495a6f"
+      ></div>
 
       <div id="pinMaster">
-         <div id="pinContainer">
+        <div id="pinContainer">
+          <section class="section2 panel blue">
+            <h1 class="vertical-center horizontal-center">
+              <div class="flex-container">
+                <saxx>H</saxx><saxx>i</saxx><saxx>,</saxx>&nbsp; <saxx>I</saxx
+                ><saxx>’</saxx><saxx>m</saxx>&nbsp; <saxx>B</saxx><saxx>a</saxx
+                ><saxx>d</saxx><saxx>r</saxx><saxx>i</saxx>&nbsp; <saxx>Z</saxx
+                ><saxx>a</saxx><saxx>k</saxx><saxx>i</saxx><saxx>.</saxx>
+              </div>
+              <div class="flex-container">
+                <saxx>N</saxx><saxx>i</saxx><saxx>c</saxx><saxx>e</saxx>&nbsp;
+                <saxx>t</saxx><saxx>o</saxx>&nbsp; <saxx>m</saxx><saxx>e</saxx
+                ><saxx>e</saxx><saxx>t</saxx>&nbsp; <saxx>y</saxx><saxx>o</saxx
+                ><saxx>u</saxx><saxx>.</saxx>
+              </div>
+            </h1>
+          </section>
 
-            <section class="section2 panel blue">
-               <h1 class="vertical-center horizontal-center">
-                  <div class="flex-container">
-                     <saxx>H</saxx><saxx>i</saxx><saxx>,</saxx>&nbsp;
-                     <saxx>I</saxx><saxx>’</saxx><saxx>m</saxx>&nbsp;
-                     <saxx>B</saxx><saxx>a</saxx><saxx>d</saxx><saxx>r</saxx><saxx>i</saxx>&nbsp;
-                     <saxx>Z</saxx><saxx>a</saxx><saxx>k</saxx><saxx>i</saxx><saxx>.</saxx>
-                  </div>
-                  <div class="flex-container">
-                     <saxx>N</saxx><saxx>i</saxx><saxx>c</saxx><saxx>e</saxx>&nbsp;
-                     <saxx>t</saxx><saxx>o</saxx>&nbsp;
-                     <saxx>m</saxx><saxx>e</saxx><saxx>e</saxx><saxx>t</saxx>&nbsp;
-                     <saxx>y</saxx><saxx>o</saxx><saxx>u</saxx><saxx>.</saxx>
-                  </div>
-               </h1>
-            </section>
-
-            <section class="panel section3">
-               <div class="cursor">
-                  <div class="cursor__circle">
-                     <svg height="64" width="64"><circle cx="32" cy="32" r="16"></circle></svg>
-                  </div>
-               </div>
-               <div class="container-content-section3">
-                  <div class="vertical-center horizontal-center text-hover-negative">
-                     <a href="javascript:;">
-                        I’m a Developer located in Indonesia. 
-                        <br>
-                        I have a serious passion for developing applications and learning new technologies in the field of programming.
-                        <br>
-                        Well-organized person, problem solver, independent employee with high attention to detail.
-                        <br>
-                     </a>
-                  </div>
-               </div>
-            </section>
-
-            <section class="panel section4">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <div>
-                           <h1 class="flex-container" style="justify-content: start;"><saxx2>M</saxx2><saxx2>y</saxx2>&nbsp;</h1>
-                           <h1 class="flex-container" style="justify-content: start;"><saxx2>E</saxx2><saxx2>x</saxx2><saxx2>p</saxx2><saxx2>e</saxx2><saxx2>r</saxx2><saxx2>i</saxx2><saxx2>e</saxx2><saxx2>n</saxx2><saxx2>c</saxx2><saxx2>e</saxx2></h1>
-                        </div>
-                        <p>I have been working as a website developer since 2014, at that time I was working on a website for the Menaravisi Group using ASP/ASP Classic, html, css, MsSQL, etc.<br><br>
-                           After that I created websites and android applications for several Invent Graphic clients. To create an application website, I use the PHP programming language, Laravel, jQuery, MySql, etc. Meanwhile, to create Android applications, I use the Java programming language and several libraries.<br><br>
-                           Until now I work and make Android applications (Java) and websites (ReactJs) at the Bank BTPNS</p>
-                     </div>
-                     <div class="col-lg-6"><span class="content-sphere"></span></div>
-                  </div>
-               </div>
-            </section>
-         </div>
-         <div style="position: absolute;">
-            <div class="spacer s0" id="trigger"></div>
-            <div id="target">
-               <img id="plane" src="assets/front/img/paperplan.png">
+          <section class="panel section3">
+            <div class="cursor">
+              <div class="cursor__circle">
+                <svg height="64" width="64">
+                  <circle cx="32" cy="32" r="16"></circle>
+                </svg>
+              </div>
             </div>
-         </div>
-         <section class="section5 spacer s1">
+            <div class="container-content-section3">
+              <div
+                class="vertical-center horizontal-center text-hover-negative"
+              >
+                <a href="javascript:;">
+                  I’m a Developer located in Indonesia.
+                  <br />
+                  I have a serious passion for developing applications and
+                  learning new technologies in the field of programming.
+                  <br />
+                  Well-organized person, problem solver, independent employee
+                  with high attention to detail.
+                  <br />
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel section4">
             <div class="container">
-               <div class="row">
-                  <div class="col-lg-3">
-                     <div id="trigger1" class="spacer s0"></div>
-                     <div id="pin1" class="box2 blue">
-                        <h1 class="flex-container" style="justify-content: start;">
-                           <saxx3>M</saxx3><saxx3>y</saxx3>&nbsp;
-                        </h1>
-                        <h1 class="flex-container" style="justify-content: start;">
-                           <saxx3>P</saxx3><saxx3>o</saxx3><saxx3>r</saxx3><saxx3>t</saxx3><saxx3>f</saxx3><saxx3>o</saxx3><saxx3>l</saxx3><saxx3>i</saxx3><saxx3>o</saxx3>
-                        </h1>
-                     </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div>
+                    <h1 class="flex-container" style="justify-content: start">
+                      <saxx2>M</saxx2><saxx2>y</saxx2>&nbsp;
+                    </h1>
+                    <h1 class="flex-container" style="justify-content: start">
+                      <saxx2>E</saxx2><saxx2>x</saxx2><saxx2>p</saxx2
+                      ><saxx2>e</saxx2><saxx2>r</saxx2><saxx2>i</saxx2
+                      ><saxx2>e</saxx2><saxx2>n</saxx2><saxx2>c</saxx2
+                      ><saxx2>e</saxx2>
+                    </h1>
                   </div>
-                  <div class="col-lg-9" id="container-portfolio">
-                     
-                     <main>
-                        <div class="grid-wrap">
-                           <div class="grid">
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Minnapadi.png" alt="Minnapadi" />
-                                 </div>
-                                 <h3 class="grid__item-title">Minnapadi</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/JAHEGO.png" alt="Jahego Brand" />
-                                 </div>
-                                 <h3 class="grid__item-title">Jahego Brand</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/PTPN4 360 Degree Survey.png" alt="PTPN4 360 Degree Survey" />
-                                 </div>
-                                 <h3 class="grid__item-title">PTPN4 360 Degree Survey</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Marguna.png" alt="Marguna" />
-                                 </div>
-                                 <h3 class="grid__item-title">Marguna</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Fatkilla.png" alt="Fatkilla" />
-                                 </div>
-                                 <h3 class="grid__item-title">Fatkilla</h3>
-                                 <h4 class="grid__item-number">ANDROID</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Tawan.png" alt="Ta Wan Restaurant" />
-                                 </div>
-                                 <h3 class="grid__item-title">Ta Wan Restaurant</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Asian Dance Tour.png" alt="Asian Dance Tour" />
-                                 </div>
-                                 <h3 class="grid__item-title">Asian Dance Tour</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Transport.jpeg" alt="Transport Application" />
-                                 </div>
-                                 <h3 class="grid__item-title">Transport Application</h3>
-                                 <h4 class="grid__item-number">ANDROID</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Astoria Prima.png" alt="Astoria Prima" />
-                                 </div>
-                                 <h3 class="grid__item-title">Astoria Prima</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Gadget Guard.png" alt="Gadget Guard" />
-                                 </div>
-                                 <h3 class="grid__item-title">Gadget Guard</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Kemhan.png" alt="Data Management Veteran" />
-                                 </div>
-                                 <h3 class="grid__item-title">Data Management Veteran</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/IAPMO.png" alt="The IAPMO Group" />
-                                 </div>
-                                 <h3 class="grid__item-title">The IAPMO Group</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Keisi.png" alt="Keisi" />
-                                 </div>
-                                 <h3 class="grid__item-title">Keisi</h3>
-                                 <h4 class="grid__item-number">WEBSITE</h4>
-                              </a>
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/First Discovery.jpeg" alt="First Discovery" />
-                                 </div>
-                                 <h3 class="grid__item-title">First Discovery</h3>
-                                 <h4 class="grid__item-number">ANDROID</h4>
-                              </a>
-                              
-                              <a href="#" class="grid__item">
-                                 <div class="grid__item-bg"></div>
-                                 <div class="grid__item-wrap">
-                                    <img class="grid__item-img" src="img/Rumah Otomotif.jpeg" alt="Rumah Otomotif" />
-                                 </div>
-                                 <h3 class="grid__item-title">Rumah Otomotif</h3>
-                                 <h4 class="grid__item-number">ANDROID</h4>
-                              </a>
-                           </div>
-                        </div>
-                     </main>
-
-                  </div>
-               </div>
+                  <p>
+                    I have been working as a website developer since 2014, at
+                    that time I was working on a website for the Menaravisi
+                    Group using ASP/ASP Classic, html, css, MsSQL, etc.<br /><br />
+                    After that I created websites and android applications for
+                    several Invent Graphic clients. To create an application
+                    website, I use the PHP programming language, Laravel,
+                    jQuery, MySql, etc. Meanwhile, to create Android
+                    applications, I use the Java programming language and
+                    several libraries.<br /><br />
+                    Until now I work and make Android applications (Java) and
+                    websites (ReactJs) at the Bank BTPNS
+                  </p>
+                </div>
+                <div class="col-lg-6"><span class="content-sphere"></span></div>
+              </div>
             </div>
-         </section>
-
-         <div class="spacer s0"></div>
-         <div id="parallax2" class="parallaxParent">
-            <div class="container-contact">
-               <div class="container d-flex h-100">
-                  <div class="row justify-content-center align-self-center" style="width: 100%;">
-                     <div class="col-md-6">
-                        <div class="parallax-item">
-                           <img id="circle-blue" class="layer" data-depth="0.30" src="assets/front/img/circle-blu.png">
-                           <h1 style="color: #050038;" class="layer" data-depth="0.15">Contact Me</h1>
+          </section>
+        </div>
+        <div style="position: absolute">
+          <div class="spacer s0" id="trigger"></div>
+          <div id="target">
+            <img id="plane" src="assets/front/img/paperplan.png" />
+          </div>
+        </div>
+        <section class="section5 spacer s1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div id="trigger1" class="spacer s0"></div>
+                <div id="pin1" class="box2 blue">
+                  <h1 class="flex-container" style="justify-content: start">
+                    <saxx3>M</saxx3><saxx3>y</saxx3>&nbsp;
+                  </h1>
+                  <h1 class="flex-container" style="justify-content: start">
+                    <saxx3>P</saxx3><saxx3>o</saxx3><saxx3>r</saxx3
+                    ><saxx3>t</saxx3><saxx3>f</saxx3><saxx3>o</saxx3
+                    ><saxx3>l</saxx3><saxx3>i</saxx3><saxx3>o</saxx3>
+                  </h1>
+                </div>
+              </div>
+              <div class="col-lg-9" id="container-portfolio">
+                <main>
+                  <div class="grid-wrap">
+                    <div class="grid">
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Minnapadi.png"
+                            alt="Minnapadi"
+                          />
                         </div>
-                     </div>
-                     <div class="col-md-6">
-                        <p>I am interested in freelance opportunities.<br>However, if you have other requests or questions, please contact via email.</p>
-                        <ul>
-                           <li><a href="mailto:badrizaki@gmail.com" target="_blank">Send me mail</a></li>
-                           <li><a href="https://www.linkedin.com/in/badrizaki" target="_blank">Linkedin</a></li>
-                        </ul>
-                     </div>
+                        <h3 class="grid__item-title">Minnapadi</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/JAHEGO.png"
+                            alt="Jahego Brand"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Jahego Brand</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/PTPN4 360 Degree Survey.png"
+                            alt="PTPN4 360 Degree Survey"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">
+                          PTPN4 360 Degree Survey
+                        </h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Marguna.png"
+                            alt="Marguna"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Marguna</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Fatkilla.png"
+                            alt="Fatkilla"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Fatkilla</h3>
+                        <h4 class="grid__item-number">ANDROID</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Tawan.png"
+                            alt="Ta Wan Restaurant"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Ta Wan Restaurant</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Asian Dance Tour.png"
+                            alt="Asian Dance Tour"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Asian Dance Tour</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Transport.jpeg"
+                            alt="Transport Application"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Transport Application</h3>
+                        <h4 class="grid__item-number">ANDROID</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Astoria Prima.png"
+                            alt="Astoria Prima"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Astoria Prima</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Gadget Guard.png"
+                            alt="Gadget Guard"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Gadget Guard</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Kemhan.png"
+                            alt="Data Management Veteran"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">
+                          Data Management Veteran
+                        </h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/IAPMO.png"
+                            alt="The IAPMO Group"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">The IAPMO Group</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Keisi.png"
+                            alt="Keisi"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Keisi</h3>
+                        <h4 class="grid__item-number">WEBSITE</h4>
+                      </a>
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/First Discovery.jpeg"
+                            alt="First Discovery"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">First Discovery</h3>
+                        <h4 class="grid__item-number">ANDROID</h4>
+                      </a>
+
+                      <a href="#" class="grid__item">
+                        <div class="grid__item-bg"></div>
+                        <div class="grid__item-wrap">
+                          <img
+                            class="grid__item-img"
+                            src="img/Rumah Otomotif.jpeg"
+                            alt="Rumah Otomotif"
+                          />
+                        </div>
+                        <h3 class="grid__item-title">Rumah Otomotif</h3>
+                        <h4 class="grid__item-number">ANDROID</h4>
+                      </a>
+                    </div>
                   </div>
-               </div>
+                </main>
+              </div>
             </div>
-         </div>
+          </div>
+        </section>
 
-         <div id="footer" style="color: aliceblue; text-align: center;">
-            Copyright © 2023 Badri Zaki.
-         </div>
+        <div class="spacer s0"></div>
+        <div id="parallax2" class="parallaxParent">
+          <div class="container-contact">
+            <div class="container d-flex h-100">
+              <div
+                class="row justify-content-center align-self-center"
+                style="width: 100%"
+              >
+                <div class="col-md-6">
+                  <div class="parallax-item">
+                    <img
+                      id="circle-blue"
+                      class="layer"
+                      data-depth="0.30"
+                      src="assets/front/img/circle-blu.png"
+                    />
+                    <h1 style="color: #050038" class="layer" data-depth="0.15">
+                      Contact Me
+                    </h1>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    I am interested in freelance opportunities.<br />However, if
+                    you have other requests or questions, please contact via
+                    email.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="mailto:badrizaki@gmail.com" target="_blank"
+                        >Send me mail</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/badrizaki"
+                        target="_blank"
+                        >Linkedin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div id="footer" style="color: aliceblue; text-align: center">
+          Copyright © 2023 Badri Zaki.
+        </div>
       </div>
-      
-   </div>
+    </div>
 
-   <section id="content-portfolio">
+    <section id="content-portfolio">
       <div class="content">
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Minnapadi.png" alt="Some image" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Minnapadi"</h3>
-            <div class="content__item-url"><a href="https://minnapadi.com" target="_blank">https://minnapadi.com</a></div>
-            <div class="content__item-text">
-               <p style="text-transform: capitalize;">
-                  PT MINNA PADI INVESTAMA SEKURITAS TBK. IS A SECURITIES COMPANY THAT ALSO A PUBLIC LISTED COMPANY IN INDONESIA STOCK EXCHANGE SUPPORTED BY PROFESSIONALS, WE TRY OUR BEST TO PURSUIT OUR VISION AND MISSION AS WELL AS GIVE THE BEST SERVICE TO OUR CUSTOMER
-               </p><br>
-               <p>
-                  In this project I developed a responsive Company Profile Website with my CMS (Content Management System), using Laravel (PHP), MySQL, Bootstrap, jQuery, CSS3, HTML5
-               </p><br>
-            </div>
-         </div>
-         
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/JAHEGO.png" alt="Jahego Brand" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Jahego Brand"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>Create parallax company profile website for Jahego using Laravel (PHP), MySQL, Bootstrap, jQuery, CSS3, HTML5Create </p>
-            </div>
-         </div><!-- /content__item -->
-         
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/PTPN4 360 Degree Survey.png" alt="PTPN4 360 Degree Survey" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"PTPN4 360 Degree Survey"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>360 survey website application for PT Perkebunan Nusantara IV employees</p>
-            </div>
-         </div><!-- /content__item -->
-         
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Marguna.png" alt="Some image" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Marguna"</h3>
-            <div class="content__item-url"><a href="http://marguna.id" target="_blank">http://marguna.id</a></div>
-            <div class="content__item-text">
-               <p>In this project I developed a responsive Company Profile Website with my CMS (Content Management System), using Laravel (PHP), MySQL, Bootstrap, jQuery, CSS3, HTML5</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Fatkilla.png" alt="Some image" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Fatkilla"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>In this project I developed a Android application, using Java MVP (Model View Presenter) Architecture Pattern, Laravel for Rest API, MySQL</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Tawan.png" alt="Ta Wan Restaurant" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Ta Wan Restaurant"</h3>
-            <div class="content__item-url"><a href="http://tawanrestaurant.com" target="_blank">http://tawanrestaurant.com</a></div>
-            <div class="content__item-text">
-               <p>Create Responsive Website for Tawan Restaurant using laravel(PHP), MySQL, jQuery, CSS3 etc</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Asian Dance Tour.png" alt="Asian Dance Tour" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Asian Dance Tour"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>Asian Dance Tour online registration application for dance competitions with responsive website</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Transport.jpeg" alt="Transport Application" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Transport Application"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>Application used by drivers to track the route and position of the car using GPS Tracking through the Rest API</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Astoria Prima.png" alt="Astoria Prima" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Astoria Prima"</h3>
-            <div class="content__item-url"><a href="http://astoriaprima.com" target="_blank">http://astoriaprima.com</a></div>
-            <div class="content__item-text">
-               <p>Create Responsive Website for Astoria Prima using laravel(PHP), MySQL, jQuery, CSS3 etc</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Gadget Guard.png" alt="Gadget Guard" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Gadget Guard"</h3>
-            <div class="content__item-url"><a href="https://gadgetguard.doc-gadget.com" target="_blank">https://gadgetguard.doc-gadget.com</a></div>
-            <div class="content__item-text">
-               <p>Insurance application for apple products and integrated with Pasarpolis</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Kemhan.png" alt="Data Management Veteran" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Data Management Veteran"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>The application website used to manage data on veterans in the Ministry of Defense</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/IAPMO.png" alt="The IAPMO Group" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"The IAPMO Group"</h3>
-            <div class="content__item-url"><a href="https://iapmo.org" target="_blank">https://iapmo.org</a></div>
-            <div class="content__item-text">
-               <p>Create website responsive for IAPMO Group</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Keisi.png" alt="Keisi" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Keisi"</h3>
-            <div class="content__item-url"><a href="https://keisi.co.id" target="_blank">https://keisi.co.id</a></div>
-            <div class="content__item-text">
-               <p>Create Responsive Website for Keisi using laravel(PHP), MySQL, jQuery, CSS3 etc</p>
-            </div>
-         </div><!-- /content__item -->
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/First Discovery.jpeg" alt="First Discovery" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"First Discovery"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>Android applications such as the Google form where employees can make questions and then be filled in by customers to get feedback.</p>
-               <p>In this project I made this application using android java and codeigniter as Rest API and Web Admin</p>
-            </div>
-         </div><!-- /content__item -->
-         
-         <div class="content__item">
-            <div class="content__item-intro">
-               <img class="content__item-img" src="img/Rumah Otomotif.jpeg" alt="Rumah Otomotif" />
-               <h2 class="content__item-title"></h2>
-            </div>
-            <h3 class="content__item-subtitle">"Rumah Otomotif"</h3>
-            <div class="content__item-url"></div>
-            <div class="content__item-text">
-               <p>The Android application that I made for my S1 thesis.</p>
-               <p>In this project I made this application using android java and Laravel as Rest API and also Web Admin.</p>
-            </div>
-         </div><!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Minnapadi.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Minnapadi"</h3>
+          <div class="content__item-url">
+            <a href="https://minnapadi.com" target="_blank"
+              >https://minnapadi.com</a
+            >
+          </div>
+          <div class="content__item-text">
+            <p style="text-transform: capitalize">
+              PT MINNA PADI INVESTAMA SEKURITAS TBK. IS A SECURITIES COMPANY
+              THAT ALSO A PUBLIC LISTED COMPANY IN INDONESIA STOCK EXCHANGE
+              SUPPORTED BY PROFESSIONALS, WE TRY OUR BEST TO PURSUIT OUR VISION
+              AND MISSION AS WELL AS GIVE THE BEST SERVICE TO OUR CUSTOMER
+            </p>
+            <br />
+            <p>
+              In this project I developed a responsive Company Profile Website
+              with my CMS (Content Management System), using Laravel (PHP),
+              MySQL, Bootstrap, jQuery, CSS3, HTML5
+            </p>
+            <br />
+          </div>
+        </div>
 
-         <button class="content__close">Close</button>
-         <svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/JAHEGO.png"
+              alt="Jahego Brand"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Jahego Brand"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              Create parallax company profile website for Jahego using Laravel
+              (PHP), MySQL, Bootstrap, jQuery, CSS3, HTML5Create
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/PTPN4 360 Degree Survey.png"
+              alt="PTPN4 360 Degree Survey"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"PTPN4 360 Degree Survey"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              360 survey website application for PT Perkebunan Nusantara IV
+              employees
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Marguna.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Marguna"</h3>
+          <div class="content__item-url">
+            <a href="http://marguna.id" target="_blank">http://marguna.id</a>
+          </div>
+          <div class="content__item-text">
+            <p>
+              In this project I developed a responsive Company Profile Website
+              with my CMS (Content Management System), using Laravel (PHP),
+              MySQL, Bootstrap, jQuery, CSS3, HTML5
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Fatkilla.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Fatkilla"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              In this project I developed a Android application, using Java MVP
+              (Model View Presenter) Architecture Pattern, Laravel for Rest API,
+              MySQL
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Tawan.png"
+              alt="Ta Wan Restaurant"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Ta Wan Restaurant"</h3>
+          <div class="content__item-url">
+            <a href="http://tawanrestaurant.com" target="_blank"
+              >http://tawanrestaurant.com</a
+            >
+          </div>
+          <div class="content__item-text">
+            <p>
+              Create Responsive Website for Tawan Restaurant using laravel(PHP),
+              MySQL, jQuery, CSS3 etc
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Asian Dance Tour.png"
+              alt="Asian Dance Tour"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Asian Dance Tour"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              Asian Dance Tour online registration application for dance
+              competitions with responsive website
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Transport.jpeg"
+              alt="Transport Application"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Transport Application"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              Application used by drivers to track the route and position of the
+              car using GPS Tracking through the Rest API
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Astoria Prima.png"
+              alt="Astoria Prima"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Astoria Prima"</h3>
+          <div class="content__item-url">
+            <a href="http://astoriaprima.com" target="_blank"
+              >http://astoriaprima.com</a
+            >
+          </div>
+          <div class="content__item-text">
+            <p>
+              Create Responsive Website for Astoria Prima using laravel(PHP),
+              MySQL, jQuery, CSS3 etc
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Gadget Guard.png"
+              alt="Gadget Guard"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Gadget Guard"</h3>
+          <div class="content__item-url">
+            <a href="https://gadgetguard.doc-gadget.com" target="_blank"
+              >https://gadgetguard.doc-gadget.com</a
+            >
+          </div>
+          <div class="content__item-text">
+            <p>
+              Insurance application for apple products and integrated with
+              Pasarpolis
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Kemhan.png"
+              alt="Data Management Veteran"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Data Management Veteran"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              The application website used to manage data on veterans in the
+              Ministry of Defense
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/IAPMO.png"
+              alt="The IAPMO Group"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"The IAPMO Group"</h3>
+          <div class="content__item-url">
+            <a href="https://iapmo.org" target="_blank">https://iapmo.org</a>
+          </div>
+          <div class="content__item-text">
+            <p>Create website responsive for IAPMO Group</p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img class="content__item-img" src="img/Keisi.png" alt="Keisi" />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Keisi"</h3>
+          <div class="content__item-url">
+            <a href="https://keisi.co.id" target="_blank"
+              >https://keisi.co.id</a
+            >
+          </div>
+          <div class="content__item-text">
+            <p>
+              Create Responsive Website for Keisi using laravel(PHP), MySQL,
+              jQuery, CSS3 etc
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/First Discovery.jpeg"
+              alt="First Discovery"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"First Discovery"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>
+              Android applications such as the Google form where employees can
+              make questions and then be filled in by customers to get feedback.
+            </p>
+            <p>
+              In this project I made this application using android java and
+              codeigniter as Rest API and Web Admin
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="img/Rumah Otomotif.jpeg"
+              alt="Rumah Otomotif"
+            />
+            <h2 class="content__item-title"></h2>
+          </div>
+          <h3 class="content__item-subtitle">"Rumah Otomotif"</h3>
+          <div class="content__item-url"></div>
+          <div class="content__item-text">
+            <p>The Android application that I made for my S1 thesis.</p>
+            <p>
+              In this project I made this application using android java and
+              Laravel as Rest API and also Web Admin.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <button class="content__close">Close</button>
+        <svg class="content__indicator icon icon--caret">
+          <use xlink:href="#icon-caret"></use>
+        </svg>
       </div>
-   </section>
+    </section>
 
-   <script src="https://kit.fontawesome.com/d45e7e578e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d45e7e578e.js"
+      crossorigin="anonymous"
+    ></script>
 
-   <script src="assets/js/jquery.min.js"></script>
-   <script src="assets/front/js/TweenMax.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-   <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-   <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
-   <script src="assets/front/js/parallax.custom.js"></script>
-   <script src="assets/front/js/SmoothScroll.js"></script>
-   <!-- <script src="assets/front/js/shootingStars.js"></script> -->
-   <script src="assets/front/js/saxxtext.js"></script>
-   <script src="assets/front/js/TagCloud.min.js"></script>
-   <script src="assets/front/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/front/js/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/front/js/parallax.custom.js"></script>
+    <script src="assets/front/js/SmoothScroll.js"></script>
 
-   <script src="assets/front/js/imagesloaded.pkgd.min.js"></script>
-   <script src="assets/front/js/masonry.pkgd.min.js"></script>
-   <script src="assets/front/js/charming.min.js"></script>
-   <script src="assets/front/js/portfolio.js"></script>
-</body>
+    <!-- THREE JS -->
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./build/three.module.js",
+          "three/addons/": "./jsm/"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as THREE from "three";
+      import { FontLoader } from "three/addons/loaders/FontLoader.js";
+      import { TextGeometry } from "three/addons/geometries/TextGeometry.js";
+      import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+
+      THREE.Cache.enabled = true;
+
+      let container, clock;
+      let camera, cameraTarget, scene, renderer;
+      let group, textMesh1, textMesh2, textGeo, materials;
+      let text = "WELCOME",
+        bevelEnabled = true,
+        font = undefined,
+        fontName = "optimer", // helvetiker, optimer, gentilis, droid sans, droid serif
+        fontWeight = "bold"; // normal bold
+
+      const height = 50,
+        size = 70,
+        hover = 30,
+        curveSegments = 2,
+        bevelThickness = 5,
+        bevelSize = 1.5;
+
+      initText();
+      animateText();
+
+      function initText() {
+        container = document.getElementById("text3d");
+        clock = new THREE.Clock();
+
+        // CAMERA
+        camera = new THREE.PerspectiveCamera(
+          20,
+          window.innerWidth / window.innerHeight,
+          1,
+          1500
+        );
+        camera.position.set(0, 400, 700);
+        cameraTarget = new THREE.Vector3(0, 150, 0);
+
+        // SCENE
+        scene = new THREE.Scene();
+
+        // LIGHTS
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.125);
+        dirLight.position.set(0, 0, 1).normalize();
+        scene.add(dirLight);
+
+        const pointLight = new THREE.PointLight(0xffffff, 1.5);
+        let random = Math.random();
+        pointLight.color.setHSL(0.06095909470251892, 1, 0.5);
+
+        pointLight.position.set(0, 100, 90);
+        scene.add(pointLight);
+
+        materials = [
+          new THREE.MeshPhongMaterial({ color: 0xffffff, flatShading: true }), // front
+          new THREE.MeshPhongMaterial({ color: 0xffffff }), // side
+        ];
+
+        group = new THREE.Group();
+        group.position.y = 100;
+
+        scene.add(group);
+
+        const loader = new FontLoader();
+        loader.load(
+          "assets/front/font/JosefinSans-Regular.json",
+          function (response) {
+            font = response;
+            createText();
+          }
+        );
+
+        // RENDERER
+        renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setClearColor(0x000000, 0);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(500, 250);
+        container.appendChild(renderer.domElement);
+      }
+
+      function createText() {
+        textGeo = new TextGeometry(text, {
+          font: font,
+          size: size,
+          height: height,
+          curveSegments: curveSegments,
+          bevelThickness: bevelThickness,
+          bevelSize: bevelSize,
+          bevelEnabled: bevelEnabled,
+        });
+
+        textGeo.computeBoundingBox();
+
+        const centerOffset =
+          -0.5 * (textGeo.boundingBox.max.x - textGeo.boundingBox.min.x);
+
+        textMesh1 = new THREE.Mesh(textGeo, materials);
+
+        textMesh1.position.x = centerOffset;
+        textMesh1.position.y = hover;
+        textMesh1.position.z = 0;
+
+        textMesh1.rotation.x = 0;
+        textMesh1.rotation.y = Math.PI * 2;
+
+        group.add(textMesh1);
+      }
+
+      function animateText() {
+        requestAnimationFrame(animateText);
+        camera.lookAt(cameraTarget);
+        const time = clock.getElapsedTime();
+        group.rotation.y = Math.cos(time) * 0.02;
+        renderer.clear();
+        renderer.render(scene, camera);
+      }
+
+      let containerMoon, sceneMoon, cameraMoon, rendererMoon, moon;
+      initMoon();
+      function initMoon() {
+        containerMoon = document.getElementById("moon2");
+        sceneMoon = new THREE.Scene();
+        cameraMoon = new THREE.PerspectiveCamera(
+          75,
+          window.innerWidth / window.innerHeight,
+          0.1,
+          1000
+        );
+        cameraMoon.position.set(0, 1, 3);
+
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(1, 10, 6);
+        sceneMoon.add(light);
+
+        rendererMoon = new THREE.WebGLRenderer({ alpha: true });
+        rendererMoon.setSize(700, 300);
+        containerMoon.appendChild(rendererMoon.domElement);
+
+        //Add meshes here
+        let loader = new GLTFLoader().load(
+          "assets/front/model/moon.gltf",
+          function (result) {
+            moon = result.scene.children[0];
+            moon.castShadow = true;
+            sceneMoon.add(moon);
+            animateMoon();
+          }
+        );
+      }
+
+      function animateMoon() {
+        requestAnimationFrame(animateMoon);
+        rendererMoon.render(sceneMoon, cameraMoon);
+        moon.rotation.y += 0.001;
+      }
+    </script>
+    <!-- <script type="module" src="assets/front/js/mainthree.js"></script> -->
+
+    <!-- <script src="assets/front/js/shootingStars.js"></script> -->
+    <script src="assets/front/js/saxxtext.js"></script>
+    <script src="assets/front/js/TagCloud.min.js"></script>
+    <script src="assets/front/js/main.js"></script>
+
+    <script src="assets/front/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/front/js/masonry.pkgd.min.js"></script>
+    <script src="assets/front/js/charming.min.js"></script>
+    <script src="assets/front/js/portfolio.js"></script>
+  </body>
 </html>
